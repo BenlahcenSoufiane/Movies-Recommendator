@@ -7,8 +7,8 @@ WatchHub is an online platform specialized in movie recommendations, aiming to s
 
 ## 📸 Screenshots
 
-![Alt Text](static/1.png)
-![Alt Text](static/11.png)
+![Alt Text](static/Screenshot2024-01-07222105.png)
+![Alt Text](static/image.png)
 ![Alt Text](static/13.png)
 ![image]([https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/54057aeb-8594-41cc-9214-c103334cb02a](https://github.com/BenlahcenSoufiane/Movies-Recommendator/blob/main/static/image.png))
 
