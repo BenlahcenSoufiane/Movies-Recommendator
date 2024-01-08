@@ -4,6 +4,7 @@
 
 WatchHub is an online platform specialized in movie recommendations, aiming to simplify users' cinematic experience by providing personalized suggestions. This platform consists of three main interfaces, each designed to offer a smooth and intuitive user experience.
 ### Website Working Flow
+![Shopping Process Flow Graph](https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/6fc937db-69d9-4aa9-9d85-a24620f13405)
 
 ## 📸 Screenshots
 ![Screenshot 2024-01-07 222105](https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/8183fdf5-4a42-4d7d-9f77-210ade151b01)
@@ -11,7 +12,8 @@ WatchHub is an online platform specialized in movie recommendations, aiming to s
 ![Screenshot 2024-01-07 222254](https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/20182a39-7a5d-400d-a892-4257d8964fad)
 ![Screenshot 2024-01-07 222347](https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/bcc9859b-dda4-499a-9eb1-2f4d113d0780)
 
-![Screenshot 2024-01-07 222450](https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/e90ae074-cfb3-4628-a3f9-c4698621898e)
+![Screenshot 2024-01-07 222515](https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/6643e430-cbf6-430b-8e85-f6ef4ef00c6c)
+
 
 
 
