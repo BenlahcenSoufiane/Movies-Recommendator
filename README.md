@@ -50,5 +50,5 @@ Please note that the use of the TMDB API may be subject to specific limitations 
 
 Feel free to contribute by proposing improvements or reporting issues. Thank you for using WatchHub!
 
-Thanks for @emaneJalal for the collaboration and contibuting in this project 
-Made with LOVE
+Thanks for @emaneJalal for the collaboration and contibuting in this project.
+## Made with LOVE
