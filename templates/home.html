@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Système de Recommandation de Films</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light gray background */
+        }
+
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333; /* Dark gray label text color */
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green submit button */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #333; /* Dark gray heading text color */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Added styles for the recommendations display */
+        .recommendation-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Updated styles for film containers */
+        .film-container {
+            flex: 1;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Different background colors for recommended films */
+        .film-container:nth-child(odd) {
+            background-color: #D9EAD3; /* Light green */
+        }
+
+        .film-container:nth-child(even) {
+            background-color: #D0E0E3; /* Light blue */
+        }
+
+        .film-details {
+            margin-top: 10px;
+        }
+
+        /* Updated styles for genres to align vertically */
+        .film-details p {
+            margin: 0;
+            color: #555; /* Medium gray genre text color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Système de Recommandation de Films</h1>
+    <form method="POST">
+        <label for="movie_title">Entrez le titre d'un film:</label>
+        <input type="text" id="movie_title" name="movie_title">
+        <input type="submit" value="Obtenir des recommandations">
+    </form>
+    {% if recommendations is not none %}
+        <h2>Recommandations pour {{ movie_title }} :</h2>
+        <div class="recommendation-container">
+            {% for index, row in recommendations.iterrows() %}
+                <div class="film-container">
+                    <strong style="color: #333;">{{ row['title'] }}</strong>
+                    <div class="film-details">
+                        <p>Genres: {{ row['genres'] }}</p>
+                        {% if movie_image_url %}
+                            <img src="{{ movie_image_url }}" alt="Movie Poster">
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</body>
+</html>

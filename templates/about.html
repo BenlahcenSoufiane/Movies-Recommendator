@@ -1,0 +1,123 @@
+<!-- about.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="Hello this is my first web page!." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styleCard.css" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styleCard.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    
+        <link
+          rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+        />
+        <title>WatchHub - Movies Recommendator Online</title>
+        <link
+          rel="icon"
+          href="/static/image1.png"
+        />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <!-- Brand/Logo on the left -->
+            <div class="navbar__brand">
+                <img
+                    src="/static/image1.png"
+                    alt="logo"
+                    class="brand__logo"
+                />
+            </div>
+
+            <!-- Navigation Links in the center -->
+            <div class="navbar__nav__items">
+            <div class="links_container">
+                <div class="nav__item">
+                    <a href="/" class="nav__link">Home</a>
+                </div>
+
+                <div class="nav__item">
+                    <a href="/recommendations" class="nav__link">Recommendations</a>
+                </div>
+
+                <div class="nav__item">
+                    <a href="/about-us" class="nav__link">About us</a>
+                </div>
+                
+            </div>  
+
+                <!-- Language Dropdown on the right -->
+                <!-- Sign In Button on the right -->
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__bg__image__container">
+                <img
+                    src="https://th.bing.com/th/id/R.da2352cfbed8f08621a43fde151398f9?rik=%2bQIDn2c%2b8K0OMg&riu=http%3a%2f%2feftm.com.au%2fwp-content%2fuploads%2f2018%2f01%2fAU-en-20171225-popsignuptwoweeks-perspective_alpha_website_large.jpg&ehk=K9xC8yHBjXr66a7zZEzMooSVXfrvuI9qT564dYAeDRs%3d&risl=&pid=ImgRaw&r=0"
+                    alt="BG hero image"
+                    class="hero__bg__image"
+                />
+                <div class="hero__bg__overlay"></div>
+                <section id="about-us" class="about-us__container">
+                    <div class="outline">
+                        <div class="card" onclick="onclick">
+                          <div class="inner">
+                            <div class="front">
+                              <h1>JALAL Imane</h1>
+                            </div>
+                            <div class="back"> <img src="/static/ProjectCrop.jpeg"/>
+                              <h1>IMANE J.</h1>
+                              <p>Big Data analytics engineering student</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                </section>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="hero__bg__image__container">
+                <img
+                    src="https://th.bing.com/th/id/R.da2352cfbed8f08621a43fde151398f9?rik=%2bQIDn2c%2b8K0OMg&riu=http%3a%2f%2feftm.com.au%2fwp-content%2fuploads%2f2018%2f01%2fAU-en-20171225-popsignuptwoweeks-perspective_alpha_website_large.jpg&ehk=K9xC8yHBjXr66a7zZEzMooSVXfrvuI9qT564dYAeDRs%3d&risl=&pid=ImgRaw&r=0"
+                    alt="BG hero image"
+                    class="hero__bg__image"
+                />
+                <div class="hero__bg__overlay"></div>
+                <section id="about-us" class="about-us__container">
+                    <div class="outline">
+                        <div class="card" onclick="onclick">
+                          <div class="inner">
+                            <div class="front">
+                              <h1>BENLAHCEN Soufiane</h1>
+                            </div>
+                            <div class="back"> <img src="https://wallpapercave.com/wp/wp4031183.jpg"/>
+                              <h1>SOUFIANE B.</h1>
+                              <p>Big Data analytics engineering student</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                </section>
+            </div>
+        </section>
+    </main>
+   
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  
+  h1, h2, h3, h4, h5, h6, a, p, span {
+    margin: 10px 10px 0 0;
+    padding-bottom: 0.714em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: white;
+    font-weight: bold;
+    text-align: center; }
+  
+  body, .inner {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url("https://th.bing.com/th/id/R.da2352cfbed8f08621a43fde151398f9?rik=%2bQIDn2c%2b8K0OMg&riu=http%3a%2f%2feftm.com.au%2fwp-content%2fuploads%2f2018%2f01%2fAU-en-20171225-popsignuptwoweeks-perspective_alpha_website_large.jpg&ehk=K9xC8yHBjXr66a7zZEzMooSVXfrvuI9qT564dYAeDRs%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    text-align: center; }
+  
+  .noselect {
+    user-select: none; }
+  
+  .outline {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .cards-container {
+        display: flex;
+        justify-content: space-between; /* Adjust the spacing between cards */
+        max-width: 1000px; /* Adjust the maximum width of the container as needed */
+        margin: 0 auto; /* Center the container */  }
+  .card {
+    background-color: transparent;
+    width: 500px;
+    height: 300px;
+    perspective: 5000px; }
+    .card:hover .inner {
+      transform: rotateY(180deg) translateZ(5px);
+      backface-visibility: visible; }
+  
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center; }
+    .inner:after {
+      content: "";
+      background: inherit;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      filter: blur(8px); }
+  
+  .front, .back {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    padding: 20px;
+    backface-visibility: hidden;
+    transform: rotateY(0deg) translateZ(0px); }
+  
+  .front {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: black; }
+    .front h1 {
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  
+  .back {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    transform: rotateY(-180deg); }
+    .back h1 {
+      padding-bottom: 0 !important;
+      padding-top: 0.714em !important; }
+    .back p {
+      padding-top: 0 !important; }
+    .back img {
+      top: 10px;
+      position: relative;
+      width: 110px;
+      height: 110px;
+      border-radius: 100%; }
+  
+  @media screen and (max-width: 900px) {
+    .inner {
+      background-size: 200% 200%; } }
+  
