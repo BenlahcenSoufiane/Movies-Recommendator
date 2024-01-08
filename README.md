@@ -1,105 +1,44 @@
-# Netflix-Clone
-This is the core code from scratch to clone the landing page of Netflix using **HTML, CSS and JavaScript.**
+# WatchHub - Movie Recommendation Platform
+
+
+
+WatchHub is an online platform specialized in movie recommendations, aiming to simplify users' cinematic experience by providing personalized suggestions. This platform consists of three main interfaces, each designed to offer a smooth and intuitive user experience.
+### Website Working Flow
 
 ## 📸 Screenshots
-![image](https://user-images.githubusercontent.com/79099734/156505537-8e28ee14-dd20-4299-9eea-984d7068c7fd.png)
-![image](https://user-images.githubusercontent.com/79099734/156505592-42d7e884-e72c-41b8-8efe-856d1aeaf4b1.png)
-![image](https://user-images.githubusercontent.com/79099734/156505619-e344eb2f-9298-4f76-8d59-d0f6a4f108dc.png)
-![image](https://user-images.githubusercontent.com/79099734/156505658-675daf0b-fe7d-4490-8d1c-ab030527ecf5.png)
-![image](https://user-images.githubusercontent.com/79099734/156505698-04ab760c-9ef1-4da2-b921-4c3e65ef0789.png)
-![image](https://user-images.githubusercontent.com/79099734/156505771-6929b1f2-1aed-4da4-bb7a-092404589241.png)
-![image](https://user-images.githubusercontent.com/79099734/156505809-309a6824-5d85-4cc0-9ffd-95d66fb2cf5e.png)
 
+## Technologies Used
+### BeautifulSoup
+BeautifulSoup is a Python library used for extracting data from HTML and XML files. It provides tools for navigating and searching the parse tree, making it easy to extract information from web sources.
 
-## Watch the Live [Demo](https://susmita-dey.github.io/Netflix-Clone/)
+### Requests
+Requests is a popular Python library for making HTTP requests. It simplifies the process of sending HTTP requests and handling responses, essential for interacting with external web services.
 
+### Flask
+Flask is a lightweight Python web framework, ideal for building web applications. It offers a simple and modular approach to creating web services and APIs, crucial for setting up WatchHub's backend infrastructure.
 
-## [Watch the video tutorial here](https://youtu.be/wpH0VR0hYTU)
+### Pandas
+Pandas is a powerful Python library for data manipulation and analysis. It offers data structures such as DataFrame, facilitating efficient manipulation of structured data, a crucial component for processing movie information.
 
+### Scikit-learn (TfidfVectorizer)
+Scikit-learn is a Python machine learning library. TfidfVectorizer, a component of Scikit-learn, is used to convert a collection of raw documents into a TF-IDF feature matrix, improving the quality of recommendations.
 
-# 💥 How to Contribute
+### Scikit-learn (cosine_similarity)
+Another feature of Scikit-learn, cosine_similarity, is used to calculate the cosine similarity between vectors. This function is often employed in natural language processing and information retrieval, contributing to the effectiveness of movie recommendations.
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Susmita-Dey/Netflix-Clone/pulls)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+### TMDB API
+The Movie Database (TMDB) API is a web service providing access to a vast database of information about movies and TV shows. This API allows the integration of up-to-date movie data into WatchHub, ensuring the relevance of recommendations.
 
-- Take a look at the existing [Issues](https://github.com/Susmita-Dey/Netflix-Clone-With-HTML-CSS-JS/issues) or [create a new issue](https://github.com/Susmita-Dey/Netflix-Clone/issues/new/choose)!
-- [Fork the Repo](https://github.com/Susmita-Dey/Netflix-Clone/fork), create a branch for any issue that you are working on and commit your work.
-- Create a **[Pull Request](https://github.com/Susmita-Dey/Netflix-Clone/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
-- Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
+### How to Use WatchHub
+Clone this repository to your local machine.
+Ensure you have the required dependencies installed. You can install them using pip install -r requirements.txt.
+Run the application using the command python app.py.
+Access the WatchHub web interface at the address provided in the console.
+Enjoy personalized recommendations based on genre and other cinematic features.
+### Disclaimer
+Please note that the use of the TMDB API may be subject to specific limitations and terms of use. Make sure to comply with TMDB's terms of service when integrating data from their API.
 
-## ⭐ HOW TO MAKE A PULL REQUEST:
+Feel free to contribute by proposing improvements or reporting issues. Thank you for using WatchHub!
 
-**1.** Start by making a fork the [**Netflix-Clone**](https://github.com/Susmita-Dey/Netflix-Clone) repository. Click on the <a href="https://github.com/Susmita-Dey/Netflix-Clone/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
-
-**2.** Clone your new fork of the repository:
-
-```bash
-git clone https://github.com/<your-github-username>/Netflix-Clone
-```
-
-**3.** Set upstream command:
-
-```bash
-git remote add upstream https://github.com/Susmita-Dey/Netflix-Clone.git
-```
-
-**4.** Navigate to the new project directory:
-
-```bash
-cd Netflix-Clone
-```
-
-**5.** Create a new branch:
-
-```bash
-git checkout -b YourBranchName
-```
-
-**6.** Sync your fork or local repository with the origin repository:
-
-- In your forked repository click on "Fetch upstream"
-- Click "Fetch and merge".
-
-### Alternatively, Git CLI way to Sync forked repository with origin repository:
-
-```bash
-git fetch upstream
-```
-
-```bash
-git merge upstream/main
-```
-
-### [Github Docs](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github) for Syncing
-
-**7.** Make your changes to the source code.
-
-**8.** Stage your changes and commit:
-
-```bash
-git add .
-```
-
-```bash
-git commit -m "<your_commit_message>"
-```
-
-**9.** Push your local commits to the remote repository:
-
-```bash
-git push origin YourBranchName
-```
-
-**10.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
-
-**11.** **Congratulations!** You've made your first contribution! 🙌🏼
-
-
-
-## All the best! 🥇
-
-<p align="center">
-
-[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Susmita-Dey/Netflix-Clone)
-
-</p>
+Thanks for @emaneJalal for the collaboration and contibuting in this project 
+Made with LOVE
