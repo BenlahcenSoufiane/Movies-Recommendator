@@ -7,7 +7,7 @@ WatchHub is an online platform specialized in movie recommendations, aiming to s
 
 ## 📸 Screenshots
 
-![Alt Text](static/12.png)
+![Alt Text](static/11.png)
 
 
 ## Technologies Used
