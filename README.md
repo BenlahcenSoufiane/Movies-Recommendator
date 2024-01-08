@@ -6,11 +6,14 @@ WatchHub is an online platform specialized in movie recommendations, aiming to s
 ### Website Working Flow
 
 ## 📸 Screenshots
+![Screenshot 2024-01-07 222105](https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/8183fdf5-4a42-4d7d-9f77-210ade151b01)
+![Screenshot 2024-01-07 222144](https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/262cef83-7d61-474a-85ca-9b3215cd264c)
+![Screenshot 2024-01-07 222254](https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/20182a39-7a5d-400d-a892-4257d8964fad)
+![Screenshot 2024-01-07 222347](https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/bcc9859b-dda4-499a-9eb1-2f4d113d0780)
 
-![Alt Text](static/Screenshot 2024-01-07 222105.png)
-![Alt Text](static/image.png)
-![Alt Text](static/13.png)
-![image]([https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/54057aeb-8594-41cc-9214-c103334cb02a](https://github.com/BenlahcenSoufiane/Movies-Recommendator/blob/main/static/image.png))
+![Screenshot 2024-01-07 222450](https://github.com/BenlahcenSoufiane/Movies-Recommendator/assets/109562080/e90ae074-cfb3-4628-a3f9-c4698621898e)
+
+
 
 ## Technologies Used
 ### BeautifulSoup
